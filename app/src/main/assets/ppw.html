@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Android WebView 与 Javascript 交互</title>
+</head>
+<body>
+<input type="button" value="JS调用Android" onclick="f1()">
+<input type="text" id="show"/>
+</body>
+<script>
+      function f1(){
+         AndroidWebView.showInfoFromJs("hello");
+      }
+      function showInfoFromJava(msg){
+        alert(msg);
+      }
+
+</script>
+</html>
